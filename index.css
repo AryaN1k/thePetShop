@@ -1173,17 +1173,17 @@ footer .col-2 img {
   }
 
   .banner-info{
-    margin-top: 25px;
+    margin-top: 4px;
     padding-left: 20px;
     width: 90%;
   }
   .banner-info h1 {
     display: block;
     color: #41403e;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 2px;
     font-weight: var(--font-weight);
-    line-height: 1.2;
+    line-height: 1;
   }
 
   .banner-info .btn {
@@ -1191,7 +1191,7 @@ footer .col-2 img {
     border: 1px solid #41403e;
     font-size: 10px;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .btn {
