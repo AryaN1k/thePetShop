@@ -338,6 +338,10 @@ form p a {
   height: 50vh;
   text-align: center;
   padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .bnrTitle {
@@ -509,6 +513,7 @@ main {
   display: flex;
   width: 300%;
   transition: all 0.8s linear;
+  background:#f9f1eddb;
 }
 
 .bnr {
@@ -519,7 +524,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 25px auto;
-  background:#f9f1eddb;
+ 
 }
 .banner-img img {
   height: 80vh;
@@ -1021,7 +1026,7 @@ footer .col-2 img {
 
   .search {
     position: absolute;
-    top: 16%;
+    top: 14%;
     right: 0;
     width: 100%;
     z-index: 2;
@@ -1084,15 +1089,17 @@ footer .col-2 img {
   /* ___________BannerTitles _____________ */
 
   .baneerTitle {
-    text-align: center;
+    text-align: start;
+    height: 250px;
+    padding: 0 10px;
   }
   .bnrTitle {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .banerPara {
-    padding-top: 15px;
-    font-size: 13px;
+    padding: 5px 10px;
+    font-size: 14px;
     color: #706e6ef0;
   }
 
@@ -1106,6 +1113,8 @@ footer .col-2 img {
     overflow: hidden;
   }
 
+  
+
   .bnr {
     display: block;
     flex-basis: 100%;
@@ -1113,32 +1122,41 @@ footer .col-2 img {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    
+  }
+
+  .banner-img {
+    padding: 15px;
   }
 
   .banner-img img {
-    height: 60vh;
+    height: 55vh;
   }
 
   .span {
     display: block;
-    color: #dead6f;
-    font-size: 15px;
+    color: #eca03c;
+    font-size: 20px;
     font-weight: var(--font-weight);
+    letter-spacing: 2px;
   }
-  .bnr {
-    padding: 5px auto;
-  }
-
+ 
   .controls > ul li {
-    margin: 5px;
+    margin: 0 5px;
   }
 
+  .banner-info{
+    margin-top: 25px;
+    padding-left: 20px;
+    width: 90%;
+  }
   .banner-info h1 {
     display: block;
     color: #41403e;
     font-size: 35px;
     letter-spacing: 2px;
     font-weight: var(--font-weight);
+    line-height: 1.2;
   }
 
   .banner-info .btn {
@@ -1146,7 +1164,7 @@ footer .col-2 img {
     border: 1px solid #41403e;
     font-size: 10px;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .btn {
@@ -1182,7 +1200,7 @@ footer .col-2 img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 10px;
   }
 
   .petcloth,
@@ -1192,7 +1210,7 @@ footer .col-2 img {
   .groomingSubBox {
     width: 47%;
     margin: 12px auto;
-    box-shadow: 1px 1px 14px rgb(104 104 104 / 30%);
+    box-shadow: -1px 4px 7px 3px rgb(104 104 104 / 15%);
     padding: 5px;
   }
 
