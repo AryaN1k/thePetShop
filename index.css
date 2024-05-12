@@ -1192,6 +1192,8 @@ footer .col-2 img {
   .groomingSubBox {
     width: 47%;
     margin: 12px auto;
+    box-shadow: 1px 1px 14px rgb(104 104 104 / 30%);
+    padding: 5px;
   }
 
   .petcloth img,
@@ -1209,6 +1211,29 @@ footer .col-2 img {
   .bowlDetails,
   .groomingDetail {
     width: 90%;
+  }
+
+  .pricee{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .star, .rating {
+    font-size: 5px;
+    color: #dead6f;
+    margin-top: 12px;
+}
+
+
+  .price ,
+  .delePrice{
+  font-size: 10px;
+  margin-top: 0;
+  }
+  .buy{
+    font-size: 10px;
+    padding: 5px;
   }
 
   .allCategory {
