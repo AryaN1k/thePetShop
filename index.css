@@ -545,7 +545,8 @@ main {
  
 }
 .banner-img img {
-  height: 74svh;
+  width: 100%;
+  height: 60vh;
 }
 .controls > ul {
   position: absolute;
@@ -1159,9 +1160,6 @@ footer .col-2 img {
     
   }
 
-  .banner-img {
-    padding: 15px;
-  }
 
 
   .span {
@@ -1175,6 +1173,8 @@ footer .col-2 img {
   .controls > ul li {
     margin: 0 5px;
   }
+
+
 
   .banner-info{
     margin-top: 4px;
