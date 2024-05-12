@@ -645,7 +645,7 @@ main {
   width: 22%;
   border-radius: 15px;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
