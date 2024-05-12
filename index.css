@@ -1269,7 +1269,12 @@ footer .col-2 img {
 
   main {
     margin-top: 2rem;
-    min-height: 90vh;
+    min-height: 80vh;
+  }
+
+  .glass{
+    height: 500px;
+    position: relative;
   }
 
   .faqTitle {
@@ -1288,14 +1293,15 @@ footer .col-2 img {
   }
 
   .accordion {
-    margin: 60px auto;
-    width: 280px;
+    margin: 20px auto;
+    width: 320px;
+    position: absolute;
   }
 
   .accordion li {
     list-style: none;
     width: 100%;
-    margin: 20px;
+    margin: 20px auto;
     padding: 5px;
     border-radius: 10px;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
@@ -1314,7 +1320,7 @@ footer .col-2 img {
   .accordion li label::before {
     content: "+";
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 600;
   }
 
@@ -1325,20 +1331,32 @@ footer .col-2 img {
   .faqContent {
     color: #555;
     padding: 0 10px;
-    line-height: 15px;
+    line-height: 18px;
     font-size: 15px;
     max-height: 0;
-    overflow: hidden;
+    overflow: hidden;text-transform: capitalize;
     transition: max-height 0.5s, padding 0.5s;
   }
 
   .accordion .faqInput[type="radio"]:checked + label + .faqContent {
-    max-height: 200px;
-    padding: 10px 10px 20px;
+    max-height: 90px;
+    padding: 5px 10px ;
   }
 
   .accordion .faqInput[type="radio"]:checked + label::before {
     content: "-";
+  }
+
+  footer {
+    padding:40px;
+    margin-top: 20px;
+    /* background-color: #575757; */
+    background: #05837f;
+    position:static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
   }
 }
 
