@@ -513,7 +513,7 @@ main {
 
 #sectionTwo {
   background: var(--hero);
-  height: 100svh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -545,7 +545,7 @@ main {
  
 }
 .banner-img img {
-  height: 80vh;
+  height: 74svh;
 }
 .controls > ul {
   position: absolute;
@@ -1050,14 +1050,15 @@ footer .col-2 img {
 
   .search {
     position: absolute;
-    top: 14%;
-    transform: translateY(-14%);
+    top: 12%;
+    transform: translateY(-12%);
     right: 0;
     width: 100%;
     z-index: 2;
     background: #fff;
     box-shadow: none;
     border: 1px solid #403f3d61;
+    height: 30px;
   }
 
   .search_input {
@@ -1065,7 +1066,13 @@ footer .col-2 img {
     color: #333;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .search_icon {
+    color: #353232;
+    font-size: 20px;
   }
 
   .list {
@@ -1101,7 +1108,7 @@ footer .col-2 img {
   /* _____________All__________________ */
 
   .allCategory {
-    margin-top: 25px;
+    margin-top: 0;
     min-height: 150px;
     padding: 30px;
     gap: 20px;
@@ -1156,9 +1163,6 @@ footer .col-2 img {
     padding: 15px;
   }
 
-  .banner-img img {
-    height: 55svh;
-  }
 
   .span {
     display: block;
@@ -1183,7 +1187,6 @@ footer .col-2 img {
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: var(--font-weight);
-    line-height: 1;
   }
 
   .banner-info .btn {
