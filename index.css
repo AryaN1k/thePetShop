@@ -230,6 +230,11 @@ form p a {
   font-size: 25px;
   padding: 0 5px;
 }
+.shop_icon:hover ,
+.user_icon:hover {
+  color:#BB5033;}
+
+
 
 .links {
   text-decoration: none;
@@ -708,6 +713,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 95%;
 }
 
 .clothing_detail h3,
@@ -715,9 +721,7 @@ main {
 .treetsDatail h3,
 .bowlDetails h3,
 .groomingDetail h3 {
-  font-size: 35px;
-  font-weight: 100;
-  font-style: italic;
+  font-size: 30px;
   color: #6e6a6a;
 }
 
@@ -726,7 +730,6 @@ main {
 .rating {
   font-size: 20px;
   color: #dead6f;
-  margin-top: 12px;
 }
 
 .price {
