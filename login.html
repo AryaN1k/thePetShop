@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <sectio id="login">
+        <div class="profile_box">
+            <div class="profile_headingBox">
+              <h1 id="signupTitle">Sign Up</h1>
+            <i class="fa-solid fa-xmark closeIcon"></i>
+            </div>
+            <form action="">
+              <div class="input_group">
+                <div class="input_filed" id="nameField">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="first name"  id="nameField">
+                </div>
+                <div class="input_filed" id="lastnameField">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="last name"  id="lastNameInput">
+                </div>
+                <div class="input_filed">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" placeholder="Email"   id="emailInput">
+                </div>
+                <div class="input_filed">
+                  <i class="fa-solid fa-lock"></i>
+                  <input type="password" placeholder="Password"  id="passwordInput">
+                </div>
+                <p id="lost">Lost Password <a href="#">Click here!</a></p>
+              </div>
+              <div class="btn_filed">
+                <button type="button" id="signupBtn">Sign up</button>
+                <button type="button" id="signinBtn" class="disable">Sign in</button>
+              </div>
+            </form>
+          </div>
+    </sectio>
+
+    <script>
+      let Lost = document.querySelector("#lost")
+      let signupBtn = document.querySelector("#signupBtn");
+      let signinBtn = document.querySelector("#signinBtn");
+      let namefield = document.querySelector("#nameField");
+      let lastName = document.querySelector("#lastnameField");
+      let signUpTitle = document.querySelector("#signupTitle");
+      let body = document.querySelector("body");
+      let closeIcon = document.querySelector(".closeIcon");
+      let emailInput = document.querySelector("#emailInput");
+      let passwordInput = document.querySelector("#passwordInput");
+
+      signinBtn.onclick = function () {
+        namefield.style.maxHeight = "0";
+        lastName.style.maxHeight = "0";
+        Lost.style.display = "block";
+        signUpTitle.innerHTML = "Sign In";
+        signupBtn.classList.add("disable");
+        signinBtn.classList.remove("disable");
+        
+        };
+        
+        signupBtn.onclick = function () {
+          namefield.style.maxHeight = "65px";
+          Lost.style.display = "none";
+        lastName.style.maxHeight = "65px";
+        signUpTitle.innerHTML = "Sign Up";
+        signupBtn.classList.remove("disable");
+        signinBtn.classList.add("disable");
+      };
+
+      const demoEmail = "demo@gmail.com"
+      const demoPassword = "1234"
+
+      if(emailInput == demoEmail && passwordInput == demoPassword){
+        window.location.assign = "index.html"
+      }
+     
+    </script>
+</body>
+</html>
