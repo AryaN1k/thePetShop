@@ -1,1277 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scooby pet shop</title>
-
-    <link rel="icon" href="images/logo.jpg" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <!-- swiper/ -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
-
-  <body>
-    <!-- ----------------HeaderSection-------------- -->
-    <header class="header blur">
-      <div class="main_header">
-        <img src="images/Slogo.png" class="logo_img" />
-        <div class="search">
-          <input
-            type="text"
-            placeholder="Search here. ."
-            class="search_input"
-          />
-          <i class="fa-solid fa-magnifying-glass search_icon"></i>
-        </div>
-        <div class="submenu">
-          <ul class="list">
-            <li class="link_list"><a href="#sectionTwo" class="links">Home</a></li>
-            <li class="link_list"><a href="#form" class="links">About Us</a></li>
-            <li class="link_list"><a href="#clothig" class="links">Products</a></li>
-            <li class="link_list"><a href="#" class="links">Services</a></li>
-          </ul>
-        </div>
-        <div class="icon_conatiner">
-          <div class="line line_1">
-            <div class="iner_line iner_line_1"></div>
-          </div>
-          <div class="line line_2">
-            <div class="iner_line iner_line_2"></div>
-          </div>
-        </div>
-        <!-- <div class="shoping_icon">
-          <i class="fa-regular fa-user user_icon"></i>
-        </div> -->
-      </div>
-    </header>
-
-    <!-- ----------------AllCategotyProductsSection--------------->
-
-    <div class="allCategory blur">
-      <div class="catBox">
-        <a href="#foods">
-          <img src="images/catThree.webp" alt="" class="catImage" />
-          <h3 class="catName">Food</h3>
-        </a>
-      </div>
-      <div class="catBox">
-        <a href="#treets">
-          <img src="images/catTwo.webp" alt="" class="catImage" />
-          <h3 class="catName">Treets</h3>
-        </a>
-      </div>
-      <div class="catBox">
-        <a href="#">
-          <img src="images/catsix.webp" alt="" class="catImage" />
-          <h3 class="catName">Supplements</h3>
-        </a>
-      </div>
-      <div class="catBox">
-        <a href="#bowls">
-          <img src="images/bowl.webp" alt="" class="catImage" />
-          <h3 class="catName">Bowls</h3>
-        </a>
-      </div>
-      <div class="catBox">
-        <a href="#Grooming">
-          <img src="images/catSaven.webp" alt="" class="catImage" />
-          <h3 class="catName">Grooming</h3>
-        </a>
-      </div>
-    </div>
-    <!-- ----------------BannerTitleSection-------------- -->
-    <section class="baneerTitle scroll blur">
-      <!-- <img src="images/dogPow.png" alt=""> -->
-      <h1 class="bnrTitle">We Absolutely Adore Animals.</h1>
-      <span class="banerPara"
-        >One day all the dogs we've ever loved will come running towards us. And
-        that's gonna be a great day..</span
-      >
-      <!-- <img src="images/dogPow.png" alt=""> -->
-    </section>
-    <!-- ----------------BannerSection-------------- -->
-    <section id="sectionTwo" class="blur">
-      <div class="container scroll">
-        <div class="content">
-          <div class="slider">
-            <div class="bnr">
-              <div class="banner-img"><img src="images/banner-img.png" "></div>
-              <div class="banner-info">
-                <span class="span">SAVE 10-20% OFF</span>
-                <h1>
-                  Best Destination For <span class="h1"> Your pets. </span>
-                </h1>
-                <a href="#" class="btn">SHOP NOW</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <sectio id="login">
+        <div class="profile_box">
+            <div class="profile_headingBox">
+              <h1 id="signupTitle">Sign Up</h1>
+            <i class="fa-solid fa-xmark closeIcon"></i>
+            </div>
+            <form action="">
+              <div class="input_group">
+                <div class="input_filed" id="nameField">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="first name"  id="nameField">
+                </div>
+                <div class="input_filed" id="lastnameField">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="last name"  id="lastNameInput">
+                </div>
+                <div class="input_filed">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" placeholder="Email"   id="emailInput">
+                </div>
+                <div class="input_filed">
+                  <i class="fa-solid fa-lock"></i>
+                  <input type="password" placeholder="Password"  id="passwordInput">
+                </div>
+                <p id="lost">Lost Password <a href="#">Click here!</a></p>
               </div>
-            </div>
-            <div class="bnr">
-              <div class="banner-img"><img src="images/banner-img3.png" "></div>
-              <div class="banner-info">
-                <span class="span">SAVE 10-20% OFF</span>
-                <h1>
-                  Best Destination For <span class="h1"> Your pets. </span>
-                </h1>
-                <a href="#" class="btn">SHOP NOW</a>
+              <div class="btn_filed">
+                <button type="button" id="signupBtn">Sign up</button>
+                <button type="button" id="signinBtn" class="disable">Sign in</button>
               </div>
-            </div>
-            <div class="bnr">
-              <div class="banner-img"><img src="images/banner-img4.png" "></div>
-              <div class="banner-info">
-                <span class="span">SAVE 10-20% OFF</span>
-                <h1>
-                  Best Destination For <span class="h1"> Your pets. </span>
-                </h1>
-                <a href="#" class="btn">SHOP NOW</a>
-              </div>
-            </div>
+            </form>
           </div>
-          <div class="controls">
-            <ul>
-              <li class="selected"></li>
-              <li class=""></li>
-              <li class=""></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--------------------- cloth_section ------------------>
-
-    <section id="clothig " class="scroll">
-      <div class="cloth_heading">
-        <h1>Pet Clothing</h1>
-        <a href="#" class="btn cloth_btn">Shop Now</a>
-      </div>
-      <div class="pet_clothing">
-        <div class="petcloth">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="clothing_detail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="petcloth">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="clothing_detail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="petcloth">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="clothing_detail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="petcloth">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="clothing_detail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="petcloth">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="clothing_detail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="petcloth">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="clothing_detail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="petcloth">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="clothing_detail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="petcloth">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="clothing_detail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-     
-      </div>
-    </section>
-
-    <!-- ------------------food------------------ -->
-    <section id="foods" class="foods scroll">
-      <div class="food_heading">
-        <h1>Foodies</h1>
-        <a href="#" class="btn food_btn">Shop Now</a>
-      </div>
-      <div class="fmainbox">
-        <div class="fsubbox">
-          <img src="images/fooditem1.jpg" alt="" />
-          <div class="fdetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-       
-        <div class="fsubbox">
-          <img src="images/fooditem1.jpg" alt="" />
-          <div class="fdetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-       
-        <div class="fsubbox">
-          <img src="images/fooditem1.jpg" alt="" />
-          <div class="fdetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-       
-        <div class="fsubbox">
-          <img src="images/fooditem1.jpg" alt="" />
-          <div class="fdetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-       
-        <div class="fsubbox">
-          <img src="images/fooditem1.jpg" alt="" />
-          <div class="fdetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-       
-        <div class="fsubbox">
-          <img src="images/fooditem1.jpg" alt="" />
-          <div class="fdetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-       
-        <div class="fsubbox">
-          <img src="images/fooditem1.jpg" alt="" />
-          <div class="fdetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-       
-        <div class="fsubbox">
-          <img src="images/fooditem1.jpg" alt="" />
-          <div class="fdetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-       
-      </div>
-    </section>
-
-    <!-- ---------------------------treets-------------------- -->
-    <section id=" treets" class="treets scroll">
-      <div class="treets_heading">
-        <h1>Treets</h1>
-        <a href="#" class="btn treets_btn">Shop Now</a>
-      </div>
-      <div class="treets_mainBox">
-        <div class="treets_subBox">
-          <div class="treetsimg">
-            <img src="images/fooditem1.jpg" alt="" />
-          </div>
-          <div class="treetsDatail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="treets_subBox">
-          <div class="treetsimg">
-            <img src="images/fooditem1.jpg" alt="" />
-          </div>
-          <div class="treetsDatail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="treets_subBox">
-          <div class="treetsimg">
-            <img src="images/fooditem1.jpg" alt="" />
-          </div>
-          <div class="treetsDatail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="treets_subBox">
-          <div class="treetsimg">
-            <img src="images/fooditem1.jpg" alt="" />
-          </div>
-          <div class="treetsDatail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="treets_subBox">
-          <div class="treetsimg">
-            <img src="images/fooditem1.jpg" alt="" />
-          </div>
-          <div class="treetsDatail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="treets_subBox">
-          <div class="treetsimg">
-            <img src="images/fooditem1.jpg" alt="" />
-          </div>
-          <div class="treetsDatail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="treets_subBox">
-          <div class="treetsimg">
-            <img src="images/fooditem1.jpg" alt="" />
-          </div>
-          <div class="treetsDatail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="treets_subBox">
-          <div class="treetsimg">
-            <img src="images/fooditem1.jpg" alt="" />
-          </div>
-          <div class="treetsDatail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-       
-   
-      </div>
-    </section>
- 
-    <!-- -------------------Bowls------------------------------- -->
-    <section id="bowls" class="scroll">
-      <div class="bowl_heading">
-        <h1>Bowls</h1>
-        <a href="#" class="btn bowls_btn">Shop Now</a>
-      </div>
-      <div class="bowlMainBox">
-        <div class="bowlSubBox">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="bowlDetails">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="bowlSubBox">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="bowlDetails">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="bowlSubBox">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="bowlDetails">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="bowlSubBox">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="bowlDetails">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </section>
-
-    <!-- -------------------GroomingSection------------------------------- -->
-    <section id="Grooming" class="scroll">
-      <div class="grooming_heading">
-        <h1>Grooming</h1>
-        <a href="#" class="btn grooming_btn">Shop Now</a>
-      </div>
-      <div class="groomingMainBox">
-        <div class="groomingSubBox">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="groomingDetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="groomingSubBox">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="groomingDetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="groomingSubBox">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="groomingDetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="groomingSubBox">
-          <img src="images/clothing-item1.jpg" alt="" />
-          <div class="groomingDetail">
-            <h3>Hoodie</h3>
-            <div class="star_icon">
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <i class="fa-solid fa-star star"></i>
-              <span class="rating">5.0</span>
-            </div>
-            <div class="pricee">
-              <span class="price">$18.00</span>
-            </div>
-            <div class="buybtn">
-              <button class="buy">Buy</button>
-            </div>
-          </div>
-        </div>
-
-  
-      </div>
-    </section>
-
-       <!--------------------- form ------------------>
-
-       <section id="form" class="scroll">
-        <form action="" method="post">
-          <div class="form_container">
-            <div class="formHeading">
-              <h1>Contact Us</h1>
-            </div>
-            <div class="input_box">
-              <input type="text" class="input" required />
-              <label for="text" class="place">Your Name</label>
-            </div>
-            <div class="input_box">
-              <input type="text" class="input" required />
-              <label class="place" for="input"> Enter Email</label>
-            </div>
-            <div class="input_box">
-              <input type="text" class="input" required />
-              <label class="place" for="input">Subject</label>
-            </div>
-            <div class="input_box">
-              <input type="text" class="input Message" required />
-              <label class="place" for="Message">Enter Message</label>
-            </div>
-            <button id="mybtn">Send</button>
-          </div>
-        </form>
-       </section>
-
-       <!-- --------------parents------------- -->
-
-    <section class="revBox scroll">
-      <div class="revContainer">
-        <div class="revTitle">
-          <img src="images/dogPow.png" class="dogp" />
-          <h1 class="revHaeading">Happy Parents</h1>
-          <img src="images/dogPow.png" class="dogp" />
-        </div>
-        <div class="revContent">
-          <div class="swiper revSlider jsSlider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide revIteam">
-                <div class="revInfo">
-                  <img src="/images/baanneritem4.jpg" class="revImage" />
-                  <div class="revTextBox">
-                    <h2 class="revName">Uday</h2>
-                    <span class="revPlace">Saharanpur</span>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Expedita, magnam cupiditate eaque enim, officia dignissimos
-                  est aut eos corrupti quis a ut recusandae reiciendis aliquam?
-                </p>
-                <div class="revRating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <div class="swiper-slide revIteam">
-                <div class="revInfo">
-                  <img src="/images/baanneritem4.jpg" class="revImage" />
-                  <div class="revTextBox">
-                    <h2 class="revName">Uday</h2>
-                    <span class="revPlace">Saharanpur</span>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Expedita, magnam cupiditate eaque enim, officia dignissimos
-                  est aut eos corrupti quis a ut recusandae reiciendis aliquam?
-                </p>
-                <div class="revRating" style="display: flex">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <div class="swiper-slide revIteam">
-                <div class="revInfo">
-                  <img src="/images/baanneritem4.jpg" class="revImage" />
-                  <div class="revTextBox">
-                    <h2 class="revName">Uday</h2>
-                    <span class="revPlace">Saharanpur</span>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Expedita, magnam cupiditate eaque enim, officia dignissimos
-                  est aut eos corrupti quis a ut recusandae reiciendis aliquam?
-                </p>
-                <div class="revRating" style="display: flex">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <div class="swiper-slide revIteam">
-                <div class="revInfo">
-                  <img src="/images/baanneritem4.jpg" class="revImage" />
-                  <div class="revTextBox">
-                    <h2 class="revName">Uday</h2>
-                    <span class="revPlace">Saharanpur</span>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Expedita, magnam cupiditate eaque enim, officia dignissimos
-                  est aut eos corrupti quis a ut recusandae reiciendis aliquam?
-                </p>
-                <div class="revRating" style="display: flex">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <div class="swiper-slide revIteam">
-                <div class="revInfo">
-                  <img src="/images/baanneritem4.jpg" class="revImage" />
-                  <div class="revTextBox">
-                    <h2 class="revName">Uday</h2>
-                    <span class="revPlace">Saharanpur</span>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Expedita, magnam cupiditate eaque enim, officia dignissimos
-                  est aut eos corrupti quis a ut recusandae reiciendis aliquam?
-                </p>
-                <div class="revRating" style="display: flex">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <div class="swiper-slide revIteam">
-                <div class="revInfo">
-                  <img src="/images/baanneritem4.jpg" class="revImage" />
-                  <div class="revTextBox">
-                    <h2 class="revName">Uday</h2>
-                    <span class="revPlace">Saharanpur</span>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Expedita, magnam cupiditate eaque enim, officia dignissimos
-                  est aut eos corrupti quis a ut recusandae reiciendis aliquam?
-                </p>
-                <div class="revRating" style="display: flex">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <div class="swiper-slide revIteam">
-                <div class="revInfo">
-                  <img src="/images/baanneritem4.jpg" class="revImage" />
-                  <div class="revTextBox">
-                    <h2 class="revName">Uday</h2>
-                    <span class="revPlace">Saharanpur</span>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Expedita, magnam cupiditate eaque enim, officia dignissimos
-                  est aut eos corrupti quis a ut recusandae reiciendis aliquam?
-                </p>
-                <div class="revRating" style="display: flex">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-              <div class="swiper-slide revIteam">
-                <div class="revInfo">
-                  <img src="/images/baanneritem4.jpg" class="revImage" />
-                  <div class="revTextBox">
-                    <h2 class="revName">Uday</h2>
-                    <span class="revPlace">Saharanpur</span>
-                  </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Expedita, magnam cupiditate eaque enim, officia dignissimos
-                  est aut eos corrupti quis a ut recusandae reiciendis aliquam?
-                </p>
-                <div class="revRating" style="display: flex">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination js-pagination"></div>
-      </div>
-    </section>
-    <!-- -------------------FAQ------------------------------- -->
-
-    <section class="scroll">
-      <main>
-        <section class="glass">
-          <h1 class="faqTitle">FAQS</h1>
-          <hr class="hori" />
-          <ul class="accordion">
-            <li>
-              <input
-                type="radio"
-                name="accordion"
-                id="first"
-                class="faqInput"
-              />
-              <label for="first">Products</label>
-              <p class="faqContent">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
-                autem laudantium ab exercitationem non deserunt neque repellat
-                ipsum ea dolores!
-              </p>
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="Acording"
-                id="second"
-                class="faqInput"
-              />
-              <label for="second">Products</label>
-              <p class="faqContent">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
-                autem laudantium ab exercitationem non deserunt neque repellat
-                ipsum ea dolores!
-              </p>
-            </li>
-            <li>
-              <input type="radio" name="Acording" id="third" class="faqInput" />
-              <label for="third">Products</label>
-              <p class="faqContent">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
-                autem laudantium ab exercitationem non deserunt neque repellat
-                ipsum ea dolores!
-              </p>
-            </li>
-            <li>
-              <input
-                type="radio"
-                name="Acording"
-                id="fourth"
-                class="faqInput"
-              />
-              <label for="fourth">Products</label>
-              <p class="faqContent">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
-                autem laudantium ab exercitationem non deserunt neque repellat
-                ipsum ea dolores!
-              </p>
-            </li>
-            <li>
-              <input type="radio" name="Acording" id="fifth" class="faqInput" />
-              <label for="fifth">Products</label>
-              <p class="faqContent">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
-                autem laudantium ab exercitationem non deserunt neque repellat
-                ipsum ea dolores!
-              </p>
-            </li>
-          </ul>
-        </section>
-      </main>
-      <div class="circleOne"></div>
-      <div class="circleTwo"></div>
-    </section>
-
-    <!-- ---------------------------FOOTER------------------------>
-
-    <footer id="contact" class="section-1">
-      <div class="col">
-        <h4>Contact</h4>
-        <br />
-        <p><strong>Address:</strong>Dehradun</p>
-        <br />
-        <p><strong>Phone:</strong>123456789, 110334465</p>
-        <br />
-        <p><strong>Hours:</strong>10:00-6:00 Man-Sat</p>
-        <div class="follow">
-          <h4>Follow Us</h4>
-        </div>
-        <div class="icon">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-youtube"></i>
-        </div>
-      </div>
-
-      <div class="col">
-        <h4>About</h4>
-        <a href="#">About Us</a>
-        <a href="#">Delivery Information</a>
-        <a href="#">Privacy policy</a>
-        <a href="#">Term & Conditions</a>
-        <a href="#">Conatct Us</a>
-      </div>
-      <div class="col">
-        <h4>My Acount</h4>
-        <a href="#">About Us</a>
-        <a href="#">Sign In</a>
-        <a href="#">View Cart</a>
-        <a href="#">My Wishlist</a>
-        <a href="#">Track My Order</a>
-      </div>
-
-      <div class="copyright">
-        <div class="form">
-          <input type="text" placeholder="Your email address" />
-          <button>Sign up</button>
-        </div>
-        <p>@ 2021.copyright,HTML Or CSS Ecommerce Website</p>
-      </div>
-    </footer>
-
-    <!-- -----------------SmoothScroll---------------------------- -->
-    <!-- <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>  -->
-    <!-- ---------------------------ModulIconLink------------------------>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <!------------- swiper js link ---------------------------->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- -----------------spliteType---------------------------- -->
-    <script src="https://unpkg.com/split-type"></script>
-    <!-- -----------------gsapCdnLink---------------------------- -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    
-    <!-- ---------------------scriptLink------------------------>
-    <script src="script.js"></script>
+    </sectio>
 
     <script>
-      const width =
-        window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.body.clientWidth;
-      const height =
-        window.innerHeight ||
-        document.documentElement.clientHeight ||
-        document.body.clientHeight;
+  
+  let Lost = document.querySelector("#lost")
+  let signupBtn = document.querySelector("#signupBtn");
+  let signinBtn = document.querySelector("#signinBtn");
+  let namefield = document.querySelector("#nameField");
+  let lastName = document.querySelector("#lastnameField");
+  let signUpTitle = document.querySelector("#signupTitle");
+  let body = document.querySelector("body");
+  let closeIcon = document.querySelector(".closeIcon");
+  let emailInput = document.querySelector("#emailInput");
+  let passwordInput = document.querySelector("#passwordInput");
 
-      console.log(width, height);
-      // let userIcon = document.querySelector(".user_icon");
-      // let popBox = document.querySelector(".profile_box");
-      // let usreProfile = document.querySelector("#profile");
-      // let signupBtn = document.querySelector("#signupBtn");
-      // let signinBtn = document.querySelector("#signinBtn");
-      // let namefield = document.querySelector("#nameField");
-      // let lastName = document.querySelector("#lastnameField");
-      // let signUpTitle = document.querySelector("#signupTitle");
-      // let body = document.querySelector("body");
-      // let closeIcon = document.querySelector(".closeIcon");
+  signinBtn.onclick = function () {
+    namefield.style.maxHeight = "0";
+    lastName.style.maxHeight = "0";
+    Lost.style.display = "block";
+    signUpTitle.innerHTML = "Sign In";
+    signupBtn.classList.add("disable");
+    signinBtn.classList.remove("disable");
+  };
 
-      // userIcon.addEventListener("click", () => {
-      //   let blur = document.querySelectorAll(".blur");
-      //   blur.forEach((Element) => {
-      //     popBox.classList.add("show");
-      //     Element.classList.add("show");
-      //     body.style.overflow = "hidden";
-      //   });
-      // });
+  signupBtn.onclick = function () {
+    namefield.style.maxHeight = "65px";
+    Lost.style.display = "none";
+    lastName.style.maxHeight = "65px";
+    signUpTitle.innerHTML = "Sign Up";
+    signupBtn.classList.remove("disable");
+    signinBtn.classList.add("disable");
+  };
 
-      // closeIcon.addEventListener("click", () => {
-      //   let blur = document.querySelectorAll(".blur");
-      //   blur.forEach((Element) => {
-      //     popBox.classList.remove("show");
-      //     Element.classList.remove("show");
-      //     body.style.overflow = "auto";
-      //   });
-      // });
 
-      // console.log(myclick , "Hello")
-      
+  const handleSignUp = async () => {
+    const firstName = document.getElementById("firstNameInput").value;
+    const lastName = document.getElementById("lastNameInput").value;
+    const email = document.getElementById("emailInput").value;
+    const password = document.getElementById("passwordInput").value;
+    try {
 
-      // ?----------------------Sing up-------------------------------------------
-   
+      const response = await fetch("https://dogwebiste.onrender.com/api/v1/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ firstName,lastName ,email, password }),
+       
+      });
+      console.log(response)
+      if (!response.ok) {
+        if (response.status === 409) {
+          // HTTP 409 indicates that the user already exists
+          alert("This Email already Exists");
+        } else {
+          throw new Error("An error occurred during signup. Please try again.");
+        }
+      } else {
+        alert("Sign Up Successful. Now You can Login");
+        console.log(response)
+        console.log(await response.json());
+        document.getElementById("firstNameInput").value = "";
+        document.getElementById("lastNameInput").value= "";
+        document.getElementById("emailInput").value = "";
+        document.getElementById("passwordInput").value = "";
+      }
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred during signup. Please try again.");
+    }
+  };
+  
+  // Function to handle sign in 
+  const handleLogin = async () => {
+    const email = document.getElementById("emailInput").value;
+    const password = document.getElementById("passwordInput").value;
+  
+    try {
+      const response = await fetch("https://dogwebiste.onrender.com/api/v1/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+        
+      });
+  
+      if (!response.ok) {
+        if (response.status === 401) {
+          // HTTP 401 indicates that email and password don't match
+          alert("Email and Password not Matched");
+        } else {
+          throw new Error("An error occurred during login. Please try again.");
+        }
+      } else {
+        const responseData = await response.json();
+        alert("Login Successful");
+        window.location.href = "https://pet-shop-ized.vercel.app/"
+        console.log(responseData);
+        document.getElementById("emailInput").value = "";
+        document.getElementById("passwordInput").value = "";
+      }
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred during login. Please try again.");
+    }
+  };
+  
+  // Add event listeners to buttons
+  document.getElementById("signupBtn").addEventListener("click", handleSignUp);
+  document.getElementById("signinBtn").addEventListener("click", handleLogin);
+
+  
+    </script>
+  </body>
+</html>
+
+</script>
+
+</body>
+</html>
