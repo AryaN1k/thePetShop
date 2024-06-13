@@ -596,20 +596,20 @@ main {
 .treetsDatail h3,
 .bowlDetails h3,
 .groomingDetail h3 {
-  font-size: 30px;
+  font-size: 20px;
   color: #6e6a6a;
 }
 
 .star,
-.price,
 .rating {
   font-size: 20px;
   color: #dead6f;
 }
 
 .price {
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: #dead6f;
+  padding: 10px 0;
 }
 
 .buybtn {
@@ -930,7 +930,7 @@ footer .col-2 img {
 
   .search {
     position: absolute;
-    top: 3.5em;
+    top: 4em;
     /* transform: translateY(-32em); */
     right: 0;
     width: 100%;
@@ -1155,7 +1155,7 @@ footer .col-2 img {
 
   .price ,
   .delePrice{
-  font-size: 10px;
+  font-size: 20px;
   margin-top: 0;
   }
   .buy{
