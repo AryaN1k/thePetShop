@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <sectio id="login">
+        <div class="profile_box">
+            <div class="profile_headingBox">
+              <h1 id="signupTitle">Sign Up</h1>
+            <i class="fa-solid fa-xmark closeIcon"></i>
+            </div>
+            <form action="">
+              <div class="input_group">
+                <div class="input_filed" id="nameField">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="first name"  id="nameField">
+                </div>
+                <div class="input_filed" id="lastnameField">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="last name"  id="lastNameInput">
+                </div>
+                <div class="input_filed">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" placeholder="Email"   id="emailInput">
+                </div>
+                <div class="input_filed">
+                  <i class="fa-solid fa-lock"></i>
+                  <input type="password" placeholder="Password"  id="passwordInput">
+                </div>
+                <p id="lost">Lost Password <a href="#">Click here!</a></p>
+              </div>
+              <div class="btn_filed">
+                <button type="button" id="signupBtn">Sign up</button>
+                <button type="button" id="signinBtn" class="disable">Sign in</button>
+              </div>
+            </form>
+          </div>
+    </sectio>
+
+    <script>
+  
+  let Lost = document.querySelector("#lost")
+  let signupBtn = document.querySelector("#signupBtn");
+  let signinBtn = document.querySelector("#signinBtn");
+  let namefield = document.querySelector("#nameField");
+  let lastName = document.querySelector("#lastnameField");
+  let signUpTitle = document.querySelector("#signupTitle");
+  let body = document.querySelector("body");
+  let closeIcon = document.querySelector(".closeIcon");
+  let emailInput = document.querySelector("#emailInput");
+  let passwordInput = document.querySelector("#passwordInput");
+
+  signinBtn.onclick = function () {
+    namefield.style.maxHeight = "0";
+    lastName.style.maxHeight = "0";
+    Lost.style.display = "block";
+    signUpTitle.innerHTML = "Sign In";
+    signupBtn.classList.add("disable");
+    signinBtn.classList.remove("disable");
+  };
+
+  signupBtn.onclick = function () {
+    namefield.style.maxHeight = "65px";
+    Lost.style.display = "none";
+    lastName.style.maxHeight = "65px";
+    signUpTitle.innerHTML = "Sign Up";
+    signupBtn.classList.remove("disable");
+    signinBtn.classList.add("disable");
+  };
+
+
+  const handleSignUp = async () => {
+    const firstName = document.getElementById("firstNameInput").value;
+    const lastName = document.getElementById("lastNameInput").value;
+    const email = document.getElementById("emailInput").value;
+    const password = document.getElementById("passwordInput").value;
+    try {
+
+      const response = await fetch("https://dogwebiste.onrender.com/api/v1/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ firstName,lastName ,email, password }),
+       
+      });
+      console.log(response)
+      if (!response.ok) {
+        if (response.status === 409) {
+          // HTTP 409 indicates that the user already exists
+          alert("This Email already Exists");
+        } else {
+          throw new Error("An error occurred during signup. Please try again.");
+        }
+      } else {
+        alert("Sign Up Successful. Now You can Login");
+        console.log(response)
+        console.log(await response.json());
+        document.getElementById("firstNameInput").value = "";
+        document.getElementById("lastNameInput").value= "";
+        document.getElementById("emailInput").value = "";
+        document.getElementById("passwordInput").value = "";
+      }
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred during signup. Please try again.");
+    }
+  };
+  
+  // Function to handle sign in 
+  const handleLogin = async () => {
+    const email = document.getElementById("emailInput").value;
+    const password = document.getElementById("passwordInput").value;
+  
+    try {
+      const response = await fetch("https://dogwebiste.onrender.com/api/v1/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+        
+      });
+  
+      if (!response.ok) {
+        if (response.status === 401) {
+          alert("Email and Password not Matched");
+        } else {
+          throw new Error("An error occurred during login. Please try again.");
+        }
+      } else {
+        const responseData = await response.json();
+        alert("Login Successful");
+         console.log("hii")
+         window.location = "home.html";
+
+        console.log(responseData);
+        document.getElementById("emailInput").value = "";
+        document.getElementById("passwordInput").value = "";
+      }
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred during login. Please try again.");
+    }
+  };
+  
+  // Add event listeners to buttons
+  document.getElementById("signupBtn").addEventListener("click", handleSignUp);
+  document.getElementById("signinBtn").addEventListener("click", handleLogin);
+
+  
+    </script>
+  </body>
+</html>
+
+</script>
+
+</body>
+</html>
