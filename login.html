@@ -128,7 +128,6 @@
   
       if (!response.ok) {
         if (response.status === 401) {
-          // HTTP 401 indicates that email and password don't match
           alert("Email and Password not Matched");
         } else {
           throw new Error("An error occurred during login. Please try again.");
@@ -136,7 +135,9 @@
       } else {
         const responseData = await response.json();
         alert("Login Successful");
-        window.location.href = "https://pet-shop-ized.vercel.app/"
+         console.log("hii")
+         window.location.replace = "/home.html";
+
         console.log(responseData);
         document.getElementById("emailInput").value = "";
         document.getElementById("passwordInput").value = "";
